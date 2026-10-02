@@ -37,7 +37,7 @@ jobs:
           VITE_BASE: /${{ github.event.repository.name }}/
           # Link til helpdesk-siden. Antager repo'et hedder aeldresagen-helpdesk.
           # Hedder det noget andet: lav en repository variable HELPDESK_URL (Settings → Variables).
-          VITE_HELPDESK_URL: ${{ vars.HELPDESK_URL || format('https://{0}.github.io/aeldresagen-helpdesk/', github.repository_owner) }}
+     VITE_HELPDESK_URL: https://anton9750.github.io/helpdesk/
 
       # Gør at direkte links og opdatering af siden virker (React Router)
       - name: Lav 404.html til SPA-routing
